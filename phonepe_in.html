@@ -1,0 +1,695 @@
+<html>
+    <head>
+        <title> PhonePe: UPI Payments, Investments, Insurance, Recharges, DTH & More </title>
+	<style>
+		.phonepe_logo{
+    padding-top: 5px;
+    padding-left: 30px;
+}
+.phonepe_logo:hover{
+    cursor:pointer;
+}
+.h1{
+    position: relative;
+    top: -15px;
+}
+.header{
+    display: flex;
+    gap: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    padding-left: 300px;
+    position: relative;
+    top: -35px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: rgb(103, 103, 223);
+}
+html, body {
+    width: 100%; 
+    overflow-x: hidden;
+}
+body{
+    margin: 0;
+    
+}
+.header_container{
+    z-index: 1000;
+    position: fixed;
+    top: 0px;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 100%;
+    height: 60px;
+    
+}
+
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    top: 80px;
+    max-width: 1400px; /* Adjust as needed */
+    margin: auto;
+    overflow: hidden;
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+.navigation .prev,
+.navigation .next {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.navigation .prev {
+    left: 10px;
+}
+
+.navigation .next {
+    right: 10px;
+}
+.navigation .prev:hover,
+.navigation .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.section_container{
+    margin-top: 80px;
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+}
+.section1{
+    overflow: hidden;
+    border: 0.5px solid rgb(139, 127, 127);
+    border-radius: 4%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.section1:hover {
+    transform: scale(1.05);
+    border: 0px;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+}
+.section2{
+    overflow: hidden;
+    border: 0.5px solid rgb(139, 127, 127);
+    border-radius: 4%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.section2:hover {
+    transform: scale(1.05);
+    border: 0px;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+}
+.section3{
+    overflow: hidden;
+    border: 0.5px solid rgb(139, 127, 127);
+    border-radius: 4%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.section3:hover {
+    transform: scale(1.05);
+    border: 0px;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+}
+
+.head{
+    margin-top: 150px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 37px;
+    color: rgb(22, 22, 107);
+    padding-left: 7%;
+}
+.gif{
+    margin-top: -670px;
+    padding-left: 50%;
+
+}
+.p1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 500px;
+    height: 500px;
+    padding-left: 7%;
+}
+
+.b1,.b2,.b3{
+    font-size: 20px;
+}
+
+.photo{
+    margin-top: 0px;
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+}
+
+.container{
+    margin-top: 50px;  
+    display: flex;
+    justify-content: center;
+
+}
+.box{
+    
+    float: left;
+    margin: 0px 10px;
+    transition: 0.5s; 
+}
+.box:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 10px 18px 10px #888888;
+}
+.section0{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.button{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid rgb(22, 22, 107);
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 35px;
+    width: 250px;
+    font-size: 20px;
+}
+.button:hover{
+    background-color: rgb(22, 22, 107);
+    color: white;
+}
+.p2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    text-align: center;
+    color: #3a3a3a;
+    width: 1000px;
+    line-height: 2.0;
+}
+.tag{
+    margin-top: 0px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(90, 90, 190);
+}
+.bg_gradient{
+    margin-top: 350px;
+    height: 750px; 
+    background-image: linear-gradient(to top, rgba(255, 0, 0, 0), rgba(207, 203, 243, 1));
+    width: 100%
+}
+.banner7{
+    padding-left: 1.5%;
+    margin-top: -980px;
+    height: 360px;
+    width: 1300px;
+}
+
+.h8{
+    margin-top: -600px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(22, 22, 107);
+}
+.h9{
+    margin-top: -30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(22, 22, 107);
+}
+.line3{
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+}
+.button1{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: white;
+    border: 1px solid rgb(85, 199, 214);
+    background-color: rgb(83, 202, 218);
+    padding: 20px;
+    text-align: center;
+    width: 190px;   
+    border-radius: 35px;
+}
+.button1:hover{
+    background-color: rgb(88, 211, 228);
+    color: white;
+    border: 1px solid rgb(88, 211, 228);
+    box-shadow: 0px 4px 4px 4px rgba(192, 185, 185, 0.3);
+    box-shadow: 0px 4px 4px 4px rgba(133, 127, 127, 0.3);
+}
+
+.transition {
+    margin-top: 30px;
+    max-width: 100%;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+.photo1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -100%;
+    transition: left 0.5s ease-in-out; 
+}
+.transition:hover .photo1 {
+    left: 0;
+}
+.line4{
+    display: flex;
+}
+.image6{
+    margin-top: 120px;
+}
+.text0{
+    display: flex;
+    padding-left: 100px;
+    flex-direction: column;
+}
+.h10{
+    margin-top: 100px;
+    font-size: 35px;
+    color: rgb(22, 22, 107);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.h11,.h12,.h13,.h14,.h15,.h16,.h17,.h18,.h19,.h20{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    color: rgb(75, 74, 74);
+}
+.h11{
+    margin-top: -10px;
+    color: rgb(58, 58, 58);
+}
+.h12{
+    font-weight: 500;
+    font-size: 23px;
+    color: rgb(31, 30, 30);
+}
+.h13{
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(127, 71, 179);
+    width: 700px;
+}.h13:hover{
+    font-size: 21px;
+    background-color: #eeeeee;
+    padding: 5px;
+    border-radius: 5px;
+}
+.h14{
+    margin-top: 10px;
+}
+.h15{
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(127, 71, 179);
+    width: 700px;
+}.h15:hover{
+    font-size: 21px;
+    background-color: #eeeeee;
+    padding: 5px;
+    border-radius: 5px;
+}
+.h16{
+    margin-top: 10px;
+}
+.h17{
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(127, 71, 179);
+    width: 700px;
+}
+.h17:hover{
+    font-size: 21px;
+    background-color: #eeeeee;
+    padding: 5px;
+    border-radius: 5px;
+}
+.h18{
+    margin-top: 10px;
+}
+.h19{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(127, 71, 179);
+    width: 700px;
+}
+.h19:hover{
+    font-size: 21px;
+    background-color: #eeeeee;
+    padding: 5px;
+    border-radius: 5px;
+}
+.h20{
+    margin-top: 10px;
+}
+.lower{
+    margin-top: 80px;
+}
+.footer{
+    margin-top: 50px;
+
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+}
+.footer-container{
+    display: flex;
+    gap: 30px;
+    padding-left: 220px;
+    padding-right: 50px;
+}
+.business_solutions,.insurance,.investments,.general,.legal,.phonepe_group{
+    line-height: 2.3;
+    width: 200px;
+}
+.general,.legal,.phonepe_group{
+    margin-top: -15px;
+}
+.footer-bottom{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 350px;
+}
+.logo0{
+    margin-top: -550px;
+}
+
+	</style>
+        <link rel="icon" href="https://www.dropbox.com/scl/fi/wd4z8y6g4slf2t496kwas/logo.png?rlkey=kneeczni52jk5v9ud4izcscon&st=1ql3m8m4&raw=1" type="image/x-icon">
+    </head>
+
+    <body>
+
+        <div class="header_container">
+                <div class="phonepe_logo">
+                    <img src="https://www.dropbox.com/scl/fi/aoekck50jf9fm12qwmkwb/phonepe.jpg?rlkey=v8lberolkjzq7x7b680o5l1oj&st=oyyn2a5i&raw=1" width="188" height="50" alt="PhonePe Logo" onclick="location.reload();">
+                </div>
+            <div class="header">
+                <div class="h1"><p>OUR SOLUTIONS</p></div>
+                <div class="h2"><a href="https://www.phonepe.com/press/">PRESS</a></div>
+                <div class="h3"><a href="https://www.phonepe.com/careers/">CAREERS</a></div>
+                <div class="h4"><a href="https://www.phonepe.com/about-us/">ABOUT US</a></div>
+                <div class="h5"><a href="https://www.phonepe.com/blog/">BLOG</a></div>
+                <div class="h6"><a href="https://www.phonepe.com/contact-us/">CONTACT US</a></div>
+                <div class="h7"><a href="https://www.phonepe.com/trust-and-safety/">TRUST & SAFETY</a></div>
+            </div>
+    </div>
+
+
+    <div class="slider">
+        <div class="slides">
+            <img class="slide" src="https://www.dropbox.com/scl/fi/sec4xc6rjo8jcq9nd2d0x/image1.jpg?rlkey=kgqkgqu2s1ywwpzx7w6b14k6q&st=ujs4hgpl&raw=1" alt="Banner 1" >
+            <img class="slide" src="https://www.dropbox.com/scl/fi/zfxycym3z97in16g438pq/banner2.jpg?rlkey=b6ajt0h7w872i3m2phwfvczit&st=qat4m2nw&raw=1" alt="Banner 2">
+            <img class="slide" src="https://www.dropbox.com/scl/fi/jds7ylar2mz7lv7l7e3pq/banner3.jpg?rlkey=o9zfpk3bokprnq9v960eta7k8&st=7w3oykm2&raw=1" alt="Banner 3">
+            <img class="slide" src="https://www.dropbox.com/scl/fi/5mi9nevn3mrmh8l8ptxkz/banner4.jpg?rlkey=g6irqs1ru1kl7d8588hkjskaf&st=q8r92vke&raw=1" alt="Banner 4">
+            <img class="slide" src="https://www.dropbox.com/scl/fi/zw1tcg16nxuomgc0s9cye/banner5.jpg?rlkey=rtogduqheofqujkih6f5kqhmv&st=5hw4iam1&raw=1" alt="Banner 5">
+            <img class="slide" src="https://www.dropbox.com/scl/fi/gt4a25e9hbuo12leem9xe/banner6.jpg?rlkey=q52dlcwd3eahasyn4sz8s3up8&st=bmm5wa8x&raw=1" alt="Banner 6">
+        </div>
+        
+        <div class="navigation">
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+        </div>
+
+    </div>
+
+
+    
+    <div class="section_container">
+            <div class="section1"><a href="https://www.phonepe.com/insurance/">
+                <img src="https://www.dropbox.com/scl/fi/63og2nq0s6h55e02ehb0g/image2.jpg?rlkey=4izadlms96nrx52ddz1z3fp6r&st=usmxecqq&raw=1" alt="Insurance"></a>
+            </div>
+            <div class="section2"><a href="https://www.phonepe.com/investments/">
+                <img src="https://www.dropbox.com/scl/fi/c46hhkg5eib8gpu1ch5ym/image3.jpg?rlkey=orck3qqpuwz26hw5fl7huqswg&st=kr292rwl&raw=1" alt="Investments"></a>
+            </div>
+            <div class="section3"><a href="https://www.phonepe.com/lending/">
+                <img src="https://www.dropbox.com/scl/fi/45mvoth8cusgl8u17tl6e/image4.jpg?rlkey=gba6kv93rh8f7weho746v171z&st=t2us3u1a&raw=1" alt="Lending"></a>
+            </div>
+    </div>
+
+
+    <h4 class="head">Simple, Fast & Secure</h4>
+
+    <div class="autoplay-vid">
+    
+        <div class="p1">
+            <div><p style="font-weight: 500;" class="b1">One app for all things money.</p></div>
+            <div><p style="color: rgb(148, 139, 139)">Pay bills, recharge, send money, buy gold, invest and shop at your favourite stores.           __________________________________________________________________________</p></div>
+            <div><p style="font-weight: 500;" class="b2">Pay whenever you like, wherever you like.</p></div>
+            <div><p style="color: rgb(148, 139, 139)">Choose from options like UPI, the PhonePe wallet or your Debit and Credit Card.              __________________________________________________________________________</p></div>
+            <div><p style="font-weight: 500;" class="b3">Find all your favourite apps on PhonePe Switch.</p></div>
+            <div><p style="color: rgb(148, 139, 139)">Book flights, order food or buy groceries. Use all your favourite apps without downloading them. </p></div>
+        </div>
+
+        <div class="gif">
+          <video autoplay loop muted >
+          <source src="https://www.dropbox.com/scl/fi/saaniygduwgq9sncp5ppr/loop.mp4?rlkey=bxmvjq3l202gvx24vgu6rqtlj&st=xm7zgna7&raw=1" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        </div>
+
+    </div>    
+
+
+      <div class="photo">
+        <img src="https://www.dropbox.com/scl/fi/afz91vyakpktj9x8ocy9l/image5.jpg?rlkey=soq87jj8qvbqd76d964bbtjfe&st=kz433uim&raw=1" alt="#kartejaabadhtejaa">
+      </div>
+
+
+        <div class="container">
+            <div class="box">
+                <iframe width="230" height="280" src="https://www.youtube.com/embed/pkYjkcozE5M" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="box">
+                <iframe width="230" height="280" src="https://www.youtube.com/embed/shu8-g0BtT4" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="box">
+                <iframe width="230" height="280" src="https://www.youtube.com/embed/aI2aqXtfXr8" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="box">
+                <iframe width="230" height="280" src="https://www.youtube.com/embed/JTt405gG6P0" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="box">
+                <iframe width="230" height="280" src="https://www.youtube.com/embed/GzM7bx2S2lc" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+        
+        <div class="section0">
+
+            <a class="button" href="https://www.youtube.com/watch?v=aI2aqXtfXr8&list=PL4dV2TSluEZyeLy1MovjRnyECn1o25FFQ" target="_blank">Watch all videos</a>
+
+            <div class="p2">
+                <p>Payments on PhonePe are safe, reliable and fast. One in three Indians are now using the PhonePe app to send money, recharge, pay bills and do so much more, in just a few simple clicks. PhonePe has also introduced several Insurance products and Investment options that offer every Indian an equal opportunity to unlock the flow of money, and get access to financial services.</p>
+            </div>
+            <p class="tag">#KarteJaBadhteJa</p>
+
+        </div>
+
+            <div class="bg_gradient"></div>
+            <img class="banner7"  src="https://www.dropbox.com/scl/fi/f45ux1av57kqi9d718g4s/Untitled-design.png?rlkey=bi5noyd46hl95kz4on6zhu61i&st=ak5krbjy&raw=1" alt="Banner 7">
+
+            <h3 class="h8">At 4+ Crore</h3>
+            <h3 class="h9">stores, apps, websites & more</h3>
+            <div class="line3">
+                <a class="button1" href="https://www.phonepe.com/business-solutions/" target="_blank">Partner with us </a>
+            </div>
+
+            <div class="transition">
+                <img class="photo1" src="https://www.dropbox.com/scl/fi/dg2ur5l9m83biqm1m7dz6/Untitled-design-1.png?rlkey=12jjz6mx2jy682wsjwhttu3zi&st=merl2yg0&raw=1" width="1350" height="400" alt="slider">
+            </div>
+
+
+            <div class="line4">
+                <div class="image6">
+                    <img src="https://www.dropbox.com/scl/fi/s7kx1xgsi4pt7zbmqcrpe/image6.jpg?rlkey=iurbptbh3o5k8t9himlmgq99f&st=v2054p1k&raw=1" alt="photo7">
+                </div>
+              <div class="text0">
+                <h4 class="h10"> For Business</h4>
+                <h4 class="h11"> Find the digital payment solution that fits your business needs</h4>
+                <h4 class="h12"> I want to:</h4>
+                <a class="h13" href="https://www.phonepe.com/business-solutions/switch/"> Be on PhonePe Switch </a>
+                <h4 class="h14"> Get new users for your app                 _________________________________________________________________________</h4>
+                <a class="h15" href="https://www.phonepe.com/business-solutions/offline-merchant/"> Accept payments at stores</a>
+                <h4 class="h16"> Help your business go cashless                 _________________________________________________________________________</h4>
+                <a class="h17" href="https://www.phonepe.com/business-solutions/payment-gateway/"> Integrate PhonePe Payment Gateway</a>
+                <h4 class="h18"> Process online payments seamlessly                 _________________________________________________________________________</h4>
+                <a class="h19" href="https://www.phonepe.com/business-solutions/merchant-advertisement/"> Advertise on PhonePe</a>
+                <h4 class="h20"> Advertise & let customers know about you</h4>
+              </div>
+            </div>
+            
+            
+              <img class="lower" src="https://www.dropbox.com/scl/fi/7z23uyymrsgx5moqe51g0/lower.jpg?rlkey=ji5an2hf9wx6b0hhnrq31rcrq&st=g15jzkdp&raw=1" alt="lower banner">
+            
+              <footer class="footer">
+                <div class="footer-container">
+        
+                  <div class="business_solutions">
+                    <ul>
+                      <li><a href="https://www.phonepe.com/business-solutions/ " style="font-weight: 500; font-size: 17px;" >Business Solutions</a></li>
+                      <li><a href="https://www.phonepe.com/business-solutions/payment-gateway/ ">Payment Gateway</a></li>
+                      <li><a href="https://www.phonepe.com/business-solutions/guardian/ ">Gaurdian by PhonePe</a></li>
+                      <li><a href="https://www.phonepe.com/business-solutions/express-checkout/ ">Express Checkout</a></li>
+                      <li><a href="https://www.phonepe.com/business-solutions/switch/ ">PhonePe Switch</a></li>
+                      <li><a href="https://www.phonepe.com/business-solutions/offline-merchant/">Offline Merchant</a></li>
+                      <li><a href="https://www.phonepe.com/business-solutions/merchant-advertisement/ ">Advertise on PhonePe</a></li>
+                      <li><a href="https://www.phonepe.com/business-solutions/offline-merchant/smartspeaker/ ">SmartSpeaker</a></li>
+                      <li><a href="https://www.phonepe.com/lending/ ">PhonePe Lending</a></li>
+                      <li><a href="https://www.phonepe.com/pos-machine/ ">POS Machine</a></li>
+                      <li><a href=https://www.phonepe.com/business-solutions/payment-link/" ">Payment Links</a></li>
+                    </ul>
+                  </div>
+              <br>
+                  <div class="insurance">
+                    <ul>
+                      <li><a href="https://www.phonepe.com/insurance/ " style="font-weight: 500; font-size: 17px;">Insurance</a></li>
+                      <li><a href="https://www.phonepe.com/insurance/motor-insurance/ ">Motor Insurance</a></li>
+                      <li><a href="https://www.phonepe.com/insurance/motor-insurance/bike-insurance/ ">Bike Insursance</a></li>
+                      <li><a href="https://www.phonepe.com/insurance/motor-insurance/car-insurance/ ">Car Insurance  </a></li>
+                      <li><a href="https://www.phonepe.com/insurance/health-insurance/ ">Health Insurance </a></li>
+                      <li><a href="https://www.phonepe.com/insurance/health-insurance/health-and-covid-19-mediclaim/ ">Arogya Sanjeevani Policy  </a></li>
+                      <li><a href="https://www.phonepe.com/insurance/life-insurance/ ">Life Insurance  </a></li>
+                      <li><a href="https://www.phonepe.com/insurance/life-insurance/term-life-insurance/ ">Term Life Insurance  </a></li>
+                      <li><a href="https://www.phonepe.com/insurance/life-insurance/accident/ ">Personal Accident Insurance  </a></li>
+                      <li><a href="https://www.phonepe.com/insurance/travel-insurance/ ">Travel Insurance </a></li>
+                      <li><a href="https://www.phonepe.com/insurance/travel-insurance/international-travel-insurance/ ">International Travel Insurance  </a></li>
+                      
+                    </ul>
+                  </div>
+
+                  <div class="investments">
+                    <ul>
+                      <li><a href="https://www.phonepe.com/investments/ " style="font-weight: 500; font-size: 17px;">Investments</a></li>
+                      <li><a href="https://www.phonepe.com/investments/gold/ ">24K Gold</a></li>
+                      <li><a href="https://www.phonepe.com/investments/mutual-funds/liquid-funds/ ">Liquid Funds</a></li>
+                      <li><a href="https://www.phonepe.com/investments/mutual-funds/tax-saving-funds/ ">Tax Savings Funds</a></li>
+                      <li><a href="https://www.phonepe.com/investments/equity-funds/ ">Equity Funds</a></li>
+                      <li><a href="https://www.phonepe.com/investments/mutual-funds/debt-fund/ ">Debt Funds</a></li>
+                      <li><a href="https://www.phonepe.com/investments/hybrid-fund/ ">Hybrid Funds</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="general">
+                    <ul>
+                      <li><p style="font-weight: 500; font-size: 17px;">General</p></li>
+                      <li><a href="https://www.phonepe.com/about-us/ ">About Us</a></li>
+                      <li><a href="https://www.phonepe.com/careers/ ">Careers</a></li>
+                      <li><a href="https://www.phonepe.com/contact-us/ ">Contact Us  </a></li>
+                      <li><a href="https://www.phonepe.com/press/ ">Press  </a></li>
+                      <li><a href="https://www.phonepeethics.com/content/phonepe-ethics/en_us.html ">Ethics  </a></li>
+                      <li><a href="https://www.phonepe.com/report-vulnerability/ ">Report Vulnerability  </a></li>
+                      <li><a href="https://www.phonepe.com/merchant-partners/ ">Merchant Partners  </a></li>
+                      <li><a href="https://www.phonepe.com/blog/ ">Blog  </a></li>
+                      <li><a href="https://tech.phonepe.com/ ">Tech Blog  </a></li>
+                      <li><a href="https://www.phonepe.com/pulse/ ">PhonePe Pulse  </a></li>
+                    </ul>
+                  </div>
+
+                  <div class="legal">
+                    <ul>
+                      <li><p style="font-weight: 500; font-size: 17px;">Legals</p></li>
+                      <li><a href="https://www.phonepe.com/terms-conditions/ ">Terms & Conditions</a></li>
+                      <li><a href="https://www.phonepe.com/privacy-policy/ ">Privacy Policy</a></li>
+                      <li><a href="https://www.phonepe.com/grievance-policy/ ">Grievance Policy </a></li>
+                      <li><a href="https://www.phonepe.com/how-to-pay/pay-by-phonepe/web/ ">How to Pay </a></li>
+                      <li><a href="https://www.phonepe.com/ewaste-policy/ ">E-Waste Policy </a></li>
+                      <li><a href="https://www.phonepe.com/trust-and-safety/ ">Trust & Safety </a></li>
+                      <li><a href="https://www.phonepeethics.com/content/dam/phonepe-ethics/documents/PhonePe-Global-Anti-Corruption-Policy.pdf ">Global Anti-Corruption Policy </a></li>
+                    </ul>
+                  </div>
+
+                  <div class="phonepe_group">
+                    <ul>
+                      <li><p style="font-weight: 500; font-size: 17px;">PhonePe Group</p></li>
+                      <li><a href="https://www.indusappstore.com/ ">Indus Appstore</a></li>
+                      <li><a href="https://share.market/ ">Share Market</a></li>
+                      <li><a href="https://www.pincode.com/ ">Pincode</a></li>
+                    </ul>
+                  </div>
+                </div>
+                
+              </footer>
+
+              <div class="footer-bottom">
+                <p>&copy; 2024 PhonePe, All Rights Reserved</p>
+              </div>
+
+              <img class="logo0" src="https://www.dropbox.com/scl/fi/aoekck50jf9fm12qwmkwb/phonepe.jpg?rlkey=v8lberolkjzq7x7b680o5l1oj&st=oyyn2a5i&raw=1" alt="logo">
+            
+
+        <script>
+		
+const slides = document.querySelector('.slides');
+const slideCount = document.querySelectorAll('.slide').length;
+let currentIndex = 0;
+
+document.querySelector('.next').addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % slideCount;
+    updateSlidePosition();
+});
+
+document.querySelector('.prev').addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + slideCount) % slideCount;
+    updateSlidePosition();
+});
+
+function updateSlidePosition() {
+    slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+setInterval(() => {
+    currentIndex = (currentIndex + 1) % slideCount;
+    updateSlidePosition();
+}, 5000); 
+
+	</script>
+    </body>
+</html>
